@@ -37,7 +37,7 @@ function countdownt(input,button){
 function send_again(input,button){
     var user = localStorage.getItem('username');
     if(user ==  null) window.location.href = '/login'; 
-    fetch('http://localhost:8080/verify/send', {
+    fetch('https://lephuocviet.io.vn/verify/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

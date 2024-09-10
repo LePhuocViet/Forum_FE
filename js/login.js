@@ -60,7 +60,7 @@ function Login_Confirm(inputUsername, inputPassword) {
   var usernameI = document.getElementById(inputUsername);
   var errorMessage = usernameI.parentElement.querySelector(".error__message")
   var passwordI = document.getElementById(inputPassword);
-  fetch('http://localhost:8080/auth/login', {
+  fetch('https://lephuocviet.io.vn/auth/login', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'

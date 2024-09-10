@@ -167,7 +167,7 @@ function onSubmit(input, select) {
 
     console.log(object); 
 
-    fetch('http://localhost:8080/users', {
+    fetch('https://lephuocviet.io.vn/users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -179,7 +179,7 @@ function onSubmit(input, select) {
         if (data.code === 1000) {
             localStorage.setItem('username', object.username);
 
-            return fetch('http://localhost:8080/verify/send', {
+            return fetch('https://lephuocviet.io.vn/verify/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

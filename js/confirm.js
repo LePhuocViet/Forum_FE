@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function verifyToken(token) {
-    fetch(`http://localhost:8080/verify?token=${encodeURIComponent(token)}`, {
+    fetch(`https://lephuocviet.io.vn/verify?token=${encodeURIComponent(token)}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
