@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="header">
+
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid__row-6">
+                <div class="container__img">
+                    <img src="./img/logo_size.png" alt="" class="img__link">
+                </div>
+            </div>
+            <div class="grid__row-6">
+                <div class="form__login-list">
+                <form id="form__login" class="form__login">
+                    <div class="container__login">
+                        <span class="container__title">LOGIN</span>
+                        <span class="container__title-ps">Welcome To Forum Language</span>
+                        <div class="form__login-user">
+                           <div class="form__input-username">
+                            <span class="form__login-title">Username</span>
+                            <input type="text" class="username" id="username" name="username">
+                            <span class="error__message">error__message</span>
+                           </div>
+                           <div class="form__input-password">
+                            <span class="form__login-title">Password</span>
+                            <input type="password" class="password" id="password" name="password">
+                            <span class="error__message">error__message</span>
+                        </div>
+                        <div class="form__login-forgot">
+                            <span class="form__forgot-tile">Forgot password ?</span>
+                            <span class="form__sign-tile">Register</span>
+                        </div>
+                        <div class="form__login-submit">
+                            <button type="button" onclick="Login_Confirm('username', 'password')" class="form__button">Login</button>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="./js/login.js"></script>
+    <script>
+        Valid_isNull(".form__input-username","username")
+        Valid_isNull(".form__input-password","password")
+        var signElement = document.querySelector(".form__sign-tile")
+        signElement.addEventListener("click", function() {
+            window.location.href = "/register.html"; 
+        });
+    </script>
+
+</body>
+</html>

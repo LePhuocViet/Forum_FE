@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.grid__row-6{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.img__link{
+    width: 100%;
+}
+
+.container__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__title{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.container__title-ps{
+    font-style: italic ;
+}
+
+.form__login-user{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.form__login-title{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px
+}
+.form__input-password{
+    margin-top: 5px;
+}
+
+.error__message{
+    color: red;
+    font-style: italic;
+    display: none;
+    font-size: 14px;
+}
+.form__login-forgot{
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__sign-tile,
+.form__forgot-tile{
+    font-size: 13px;
+    font-style: italic;
+ 
+}
+.form__sign-tile:hover,
+.form__forgot-tile:hover{
+    color: red;
+    cursor: pointer;
+}
+.repassword,
+.name,
+.email,
+.language,
+.sex,
+.password,
+.username{
+    padding: 8px;
+    border-radius: 5px;
+}
+.sex,
+.language{
+    border: 1px solid#000;
+    color: #000;
+}
+
+.form__input-repassword,
+.form__input-name,
+.form__input-email,
+.form__input-language,
+.form__input-sex,
+.form__input-password,
+.form__input-username{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__login{
+    width: 100%;
+}
+
+.form__login-list{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.form__login-submit{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.form__button:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+.form__button{
+    outline: none;
+    padding: 10px 50px;
+    background-color: #fff;
+}
+

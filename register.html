@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div class="header">
+
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid__row-6">
+                <div class="container__img">
+                    <img src="./img/logo_size.png" alt="" class="img__link">
+                </div>
+            </div>
+            <div class="grid__row-6">
+                <div class="form__login-list">
+                <form id="form__login" class="form__login">
+                    <div class="container__login">
+                        <span class="container__title">REGISTER</span>
+                        <span class="container__title-ps">Welcome To Forum Language</span>
+                        <div class="form__login-user">
+                            <div class="form__input-name">
+                                <span class="form__login-title">Name</span>
+                                <input type="text" class="name" id="name" name="name">
+                                <span class="error__message">error__message</span>
+                            </div>
+                            <div class="form__input-email">
+                                <span class="form__login-title">Email</span>
+                                <input type="text" class="email" id="email" name="email">
+                                <span class="error__message">error__message</span>
+                            </div>
+                            <div class="form__input-language">
+                                <span class="form__login-title">Language</span>
+                                <select class="language" id="language" name="language">
+                                    <option value="" disabled selected>Select your language</option>
+                                    <option value="male">English</option>
+                                    <option value="female">China</option>
+                                    <option value="other">Japan</option>
+                                </select>
+                                <span class="error__message">error__message</span>
+                            </div>
+                            <div class="form__input-sex">
+                                <span class="form__login-title">Sex</span>
+                                <select class="sex" id="sex" name="sex">
+                                    <option value="" disabled selected>Select your gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error__message">error__message</span>
+                            </div>
+                           <div class="form__input-username">
+                            <span class="form__login-title">Username</span>
+                            <input type="text" class="username" id="username" name="username">
+                            <span class="error__message">error__message</span>
+                           </div>
+                           <div class="form__input-password">
+                            <span class="form__login-title">Password</span>
+                            <input type="password" class="password" id="password" name="password">
+                            <span class="error__message">error__message</span>
+                        </div>
+                        <div class="form__input-repassword">
+                            <span class="form__login-title">RePassword</span>
+                            <input type="password" class="repassword" id="repassword" name="repassword">
+                            <span class="error__message">error__message</span>
+                        </div>
+                        <div class="form__login-forgot">
+                            <span class="form__forgot-tile">Has account ?</span>
+                      
+                        </div>
+                        <div class="form__login-submit">
+                            <button type="button" onclick="onSubmit('#form__login input,#form__login select')" class="form__button">Register</button>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="./js/register.js"></script>
+
+    <script>
+        valid_Name(".form__input-name","name")
+        valid_Email(".form__input-email","email")
+        valid_Option(".form__input-language","language")
+        Valid_isNull(".form__input-username","username")
+        Valid_isNull(".form__input-password","password")
+        Valid_isNull(".form__input-repassword","repassword")
+        checkPassword(".form__input-repassword","repassword","password")
+        var signElement = document.querySelector(".form__forgot-tile")
+        signElement.addEventListener("click", function() {
+            window.location.href = "/login.html"; 
+        });
+    </script>
+
+</body>
+</html>
