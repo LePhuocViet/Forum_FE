@@ -194,9 +194,9 @@ function onSubmit(input, select) {
     .then(response => response.json())
     .then(data => {
         if (data.code === 1000) {
-            window.location.href = '/infor.html'; 
+            window.location.href = '/Forum_FE/infor.html'; 
         } else {
-            window.location.href = '/login';
+            window.location.href = '/Forum_FE/login';
             console.error(data.message);
         }
     })
